@@ -38,8 +38,16 @@ function App() {
       </div>{" "}
       <footer>
         coded by Anna Wagner, can be accessed on{" "}
-        <a href="https://github.com/lemur-wagner/react-weatherAPP" /> GitHub
-        <a /> and <a href="https://lemurs-react-weather-app.netlify.app/" />
+        <a
+          href="https://github.com/lemur-wagner/react-weatherAPP"
+          target="_blank"
+        />{" "}
+        GitHub
+        <a /> and{" "}
+        <a
+          href="https://lemurs-react-weather-app.netlify.app/"
+          target="_blank"
+        />
         Netlify
         <a />
       </footer>

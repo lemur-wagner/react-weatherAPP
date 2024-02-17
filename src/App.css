@@ -73,3 +73,9 @@ footer,
   max-width: 800px;
   margin: 0 auto;
 }
+
+a:hover {
+  cursor: pointer;
+  text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 1px #fff, 0 0 22px #13fea4,
+    0 0 62px #13fea4, 0 0 92px #13fea4, 0 0 32px #13fea4, 0 0 51px #13fea4;
+}
