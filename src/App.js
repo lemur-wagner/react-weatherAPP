@@ -36,8 +36,7 @@ function App() {
         </section>
       </div>{" "}
       <footer>
-        coded by Anna Wagner, can be accessed on <a>GitHub</a> and{" "}
-        <a>Netlify</a>
+        coded by Anna Wagner, can be accessed on GitHub and Netlify
       </footer>
     </div>
   );
