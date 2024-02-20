@@ -1,6 +1,8 @@
 import "./App.css";
 import Form from "./Form";
 import React from "react";
+import Weather from "./Weather";
+import Forecast from "./Forecast";
 
 function App() {
   return (
@@ -18,38 +20,16 @@ function App() {
           <span>tokyo</span>
           <span>canberra</span>{" "}
         </header>
-        <Form />{" "}
-        <section>
-          <h2>
-            Prague<span>☀︎ 14°C</span>
-          </h2>
-          <p>
-            <span>
-              thursday 15:54, clouds <br />
-              precipitation: 82%, wind: 4km/h
-            </span>{" "}
-          </p>
-        </section>{" "}
+        <Form />
+        <Weather />
         <br />
         <br />
-        <section text align="center">
-          FORECAST
-        </section>
+        <Forecast />
       </div>{" "}
       <footer>
-        coded by Anna Wagner, can be accessed on{" "}
-        <a
-          href="https://github.com/lemur-wagner/react-weatherAPP"
-          target="_blank"
-        />{" "}
-        GitHub
-        <a /> and{" "}
-        <a
-          href="https://lemurs-react-weather-app.netlify.app/"
-          target="_blank"
-        />
-        Netlify
-        <a />
+        project coded by Anna Wagner and can be seen on
+        <a href="https://github.com/lemur-wagner"> GitHub</a> or{" "}
+        <a href="https://lemurs-react-weather-app.netlify.app/"> Netlify </a>
       </footer>
     </div>
   );

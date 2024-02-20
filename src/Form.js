@@ -5,7 +5,7 @@ export default function Form() {
   return (
     <div className="Form">
       <form>
-        <input type="search" className="searchBar"></input>
+        <input type="search" className="searchBar" autoFocus="on"></input>
         <input
           type="submit"
           className="submit"

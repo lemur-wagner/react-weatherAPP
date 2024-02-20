@@ -1,0 +1,13 @@
+.unit {
+  font-size: 20px;
+  position: relative;
+  top: -30px;
+}
+
+.section {
+  display: flex;
+}
+
+.description {
+  text-align: left;
+}
