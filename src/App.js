@@ -21,7 +21,7 @@ function App() {
           <span>canberra</span>{" "}
         </header>
         <Form />
-        <Weather />
+        <Weather defaultCity="Warsaw" />
         <br />
         <br />
         <Forecast />
