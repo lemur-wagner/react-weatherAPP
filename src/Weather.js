@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState(null);
+  const [city, searchCity] = useState(props.defaultCity);
 
   function displayTemperature(response) {
     setWeatherData({
@@ -17,30 +18,42 @@ export default function Weather(props) {
     });
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
+  function handleCityChange(event) {
+    searchCity(event.target.value);
+  }
+
+  function search() {
+    const apiKey = "fc033e4428deacf92tb6o5f960d83508";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}}&key=${apiKey}`;
+    axios.get(apiUrl).then(displayTemperature);
+  }
+
   if (weatherData) {
     return (
       <section>
-        <h2>
-          {weatherData.city}
-          <span>
-            {weatherData.icon} {weatherData.temperature}{" "}
-            <span className="unit"> °C I °F</span>
-          </span>
-        </h2>
-        <p>
-          <span className="description">
-            <FormattedDate date={weatherData.date} />, {weatherData.description}{" "}
-            <br />
-            precipitation: 82%, wind: {weatherData.wind}km/h
-          </span>{" "}
-        </p>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            className="searchBar"
+            onChange={handleCityChange}
+          ></input>
+          <input
+            type="submit"
+            className="submit"
+            value="🔍
+        "
+          ></input>
+        </form>
+        <WeatherInfo data={weatherData} />
       </section>
     );
   } else {
-    const apiKey = "fc033e4428deacf92tb6o5f960d83508";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}}&key=${apiKey}`;
-    axios.get(apiUrl).then(displayTemperature);
-
+    search();
     return "Loading...";
   }
 }

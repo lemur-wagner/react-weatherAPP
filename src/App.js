@@ -1,5 +1,4 @@
 import "./App.css";
-import Form from "./Form";
 import React from "react";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
@@ -20,7 +19,6 @@ function App() {
           <span>tokyo</span>
           <span>canberra</span>{" "}
         </header>
-        <Form />
         <Weather defaultCity="Warsaw" />
         <br />
         <br />
