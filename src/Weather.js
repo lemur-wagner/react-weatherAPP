@@ -9,12 +9,12 @@ export default function Weather(props) {
 
   function displayTemperature(response) {
     setWeatherData({
-      temperature: Math.round(response.data.temperature.current),
-      date: new Date(response.data.time * 1000),
+      temperature: Math.round(response.data.main.temp),
+      date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
-      description: response.data.condition.description,
+      description: response.data.weather[0].description,
       city: response.data.city,
-      icon: "☼",
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
@@ -28,8 +28,8 @@ export default function Weather(props) {
   }
 
   function search() {
-    const apiKey = "fc033e4428deacf92tb6o5f960d83508";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}}&key=${apiKey}`;
+    const apiKey = "f5e814a04eddfab1740f07bf0328eee2";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayTemperature);
   }
 

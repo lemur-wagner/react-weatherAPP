@@ -7,7 +7,7 @@ export default function WeatherInfo(props) {
       <h2>
         {props.data.city}
         <span>
-          {props.data.icon} {props.data.temperature}{" "}
+          {props.data.iconUrl} {props.data.temperature}{" "}
           <span className="unit"> °C I °F</span>
         </span>
       </h2>
