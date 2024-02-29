@@ -4,7 +4,7 @@ body {
   background-size: cover;
   background-image: url("img/brick-wall.jpg");
   text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 1px #fff, 0 0 22px #bc13fe,
-    0 0 62px #bc13fe, 0 0 92px #bc13fe, 0 0 22px #bc13fe, 0 0 51px #bc13fe;
+    0 0 62px #bc13fe, 0 0 92px #bc13fe, 0 0 2px #bc13fe, 0 0 51px #bc13fe;
 }
 
 .container {

@@ -1,3 +1,12 @@
+form {
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  margin: 15px 10px 0;
+}
+
 .unit {
   font-size: 20px;
   position: relative;
@@ -10,10 +19,6 @@
 
 .description {
   text-align: left;
-}
-form {
-  display: flex;
-  justify-content: center;
 }
 
 .searchBar {

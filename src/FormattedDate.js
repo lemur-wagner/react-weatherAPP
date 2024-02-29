@@ -39,11 +39,10 @@ export default function FormattedDate(props) {
     minutes = `0${minutes}`;
   }
   return (
-    <span>
-      <div>
-        {date} {month} {year}
-      </div>{" "}
-      {day}, {hour}:{minutes}
-    </span>
+    <div>
+      {day} {hour}:{minutes}
+      <br />
+      {date} {month} {year}
+    </div>
   );
 }
