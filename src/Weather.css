@@ -7,7 +7,7 @@ canvas {
   margin: 15px 10px 0;
 }
 
-.unit {
+.WeatherTemperature .unit {
   font-size: 20px;
   position: relative;
   top: -30px;

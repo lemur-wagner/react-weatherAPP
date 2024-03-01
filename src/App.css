@@ -4,7 +4,7 @@ body {
   background-size: cover;
   background-image: url("img/brick-wall.jpg");
   text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 1px #fff, 0 0 22px #bc13fe,
-    0 0 62px #bc13fe, 0 0 92px #bc13fe, 0 0 2px #bc13fe, 0 0 51px #bc13fe;
+    0 0 2px #bc13fe, 0 0 92px #bc13fe, 0 0 2px #bc13fe, 0 0 51px #bc13fe;
 }
 
 .container {
@@ -13,7 +13,7 @@ body {
   border-radius: 2rem;
   border: 0.2rem solid #fff;
   box-shadow: 0 0 0.2rem #fff, 0 0 0.3rem #fff, 0 0 1em #bc13fe,
-    0 0 0.5rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.5rem #bc13fe;
+    0 0 1.5rem #bc13fe, 0 0 1.9rem #bc13fe, inset 0 0 1.9rem #bc13fe;
 }
 
 h1 {
