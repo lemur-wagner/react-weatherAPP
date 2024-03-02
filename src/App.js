@@ -1,7 +1,6 @@
 import "./App.css";
 import React from "react";
 import Weather from "./Weather";
-import Forecast from "./Forecast";
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
         <Weather defaultCity="Warsaw" />
         <br />
         <br />
-        <Forecast />
       </div>{" "}
       <footer>
         project coded by Anna Wagner and can be seen on
