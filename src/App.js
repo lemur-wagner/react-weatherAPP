@@ -19,12 +19,12 @@ function App() {
           <span>canberra</span>{" "}
         </header>
         <Weather defaultCity="Warsaw" />
-        <br />
-        <br />
       </div>{" "}
       <footer>
-        project coded by Anna Wagner and can be seen on
-        <a href="https://github.com/lemur-wagner"> GitHub</a> or{" "}
+        project coded by{" "}
+        <a href="https://github.com/lemur-wagner">Anna Wagner </a>and can be
+        seen on
+        <a href="https://github.com/lemur-wagner"> GitHub</a> and{" "}
         <a href="https://lemurs-react-weather-app.netlify.app/"> Netlify </a>
       </footer>
     </div>

@@ -48,7 +48,7 @@ export default function Weather(props) {
           <input
             type="submit"
             className="submit"
-            value="🔍
+            value=" Search
         "
           ></input>
         </form>
