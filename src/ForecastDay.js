@@ -5,14 +5,14 @@ export default function ForecastDay(props) {
   function day() {
     let date = new Date(props.data.dt * 1000);
     let day = date.getDay();
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let days = ["SUN", "Mon", "TUE", "WED", "THU", "FRI", "SAT"];
 
     return days[day];
   }
   return (
     <div>
       <div className="Forecast-day">{day()}</div>
-      <WeatherIcon icon={props.data.weather[0].icon} size={40} />
+      <WeatherIcon icon={props.data.weather[0].icon} size={45} />
       <div className="Forecast-temperatures">
         <span className="Forecast-temperature-max">
           {Math.round(props.data.temp.max)}°

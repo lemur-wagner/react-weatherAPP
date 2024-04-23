@@ -28,9 +28,9 @@ form {
 
 .searchBar {
   width: 60%;
-  font-size: 16px;
+  font-size: 13px;
   color: white;
-  font-family: vibur;
+  font-family: monospace;
 }
 
 .submit {
@@ -38,6 +38,7 @@ form {
   color: white;
   margin-left: 20px;
   font-size: 15px;
+  font-family: vibur;
 }
 
 .submit:hover {
@@ -50,12 +51,11 @@ form {
 
 .searchBar,
 .submit {
-  padding: 12px;
+  padding: 10px;
   border-radius: 50px;
   border: 1px solid #f9f9f9;
   background-color: rgba(247, 242, 242, 0);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
-    Geneva, Verdana, sans-serif;
+
   text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 1px #fff, 0 0 2px #bc13fe,
     0 0 2px #bc13fe, 0 0 10px #bc13fe, 0 0 2px #bc13fe, 0 0 1px #bc13fe;
   box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 1px #fff, 0 0 2px #bc13fe,
