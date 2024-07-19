@@ -38,7 +38,7 @@ export default function Weather(props) {
 
   if (weatherData) {
     return (
-      <section>
+      <div>
         <form onSubmit={handleSubmit}>
           <input
             type="search"
@@ -54,7 +54,7 @@ export default function Weather(props) {
         </form>
         <WeatherInfo data={weatherData} />
         <Forecast coordinates={weatherData.coordinates} />
-      </section>
+      </div>
     );
   } else {
     search();
