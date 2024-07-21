@@ -15,7 +15,7 @@ form {
 }
 
 .WeatherMain .WeatherIcon {
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .section {
@@ -27,7 +27,7 @@ form {
 }
 
 .searchBar {
-  width: 60%;
+  width: 65%;
   font-size: 13px;
   color: white;
   font-family: monospace;
@@ -35,7 +35,6 @@ form {
 
 .submit {
   width: 13%;
-  color: white;
   margin-left: 20px;
   font-size: 15px;
   font-family: vibur;

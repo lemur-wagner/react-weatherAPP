@@ -9,7 +9,7 @@ body {
 
 .container {
   max-width: 500px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 2rem;
   border: 0.2rem solid #fff;
   box-shadow: 0 0 0.2rem #fff, 0 0 0.3rem #fff, 0 0 1em #bc13fe,
@@ -61,9 +61,9 @@ header {
 
 h2 {
   font-family: vibur;
-  padding: 10px;
-  font-size: 55px;
-  margin: 20px 20px 0px;
+  padding: 10px 10px 0;
+  font-size: 50px;
+  margin: 15px 10px 0px;
   display: flex;
   justify-content: space-between;
 }
