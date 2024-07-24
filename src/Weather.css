@@ -1,5 +1,6 @@
 form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -10,16 +11,8 @@ form {
   text-decoration: none;
 }
 
-.WeatherMain {
-  display: flex;
-}
-
 .WeatherMain .WeatherIcon {
   margin-right: 7px;
-}
-
-.section {
-  display: flex;
 }
 
 .description {
@@ -36,8 +29,10 @@ form {
 .submit {
   width: 13%;
   margin-left: 20px;
+  text-align: center;
   font-size: 15px;
   font-family: vibur;
+  color: white;
 }
 
 .submit:hover {
